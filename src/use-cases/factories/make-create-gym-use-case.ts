@@ -1,7 +1,7 @@
 import { GymsRepository } from '@/repositories/gyms-repository'
 import { CreateGymUseCase } from '../create-gym'
 
-export async function makeCreateGymUseCase() {
+export function makeCreateGymUseCase() {
   const gymsRepository = new GymsRepository()
 
   const useCase = new CreateGymUseCase(gymsRepository)
