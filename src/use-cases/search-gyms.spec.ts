@@ -12,8 +12,6 @@ describe('Search Gyms Use Case', () => {
   })
 
   it('should be able to search for gyms', async () => {
-    console.log(gymsRepository)
-
     await gymsRepository.create({
       title: 'JS Gym',
       phone: null,
